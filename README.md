@@ -9,5 +9,5 @@ This is the image of the path in SAP where you can launch this script amended wi
 The data to amend / Данные в коде для корректировки: 
 1) the codes of the plants as it is in your system / коды заводов, как в вашей системе. Example: "0201", "0255"
 2) months you needed for report / месяца для отчета. Example: "02", "05"
-3) Chech the year / Год отчета
+3) Check the year / Год отчета
 4) Path to the folder where you would like to store the results / Путь к месту назначения отчетов.

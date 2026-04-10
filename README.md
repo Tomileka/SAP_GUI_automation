@@ -3,7 +3,7 @@
 **Note: This repository contains an anonymized version of a real-world business project. All sensitive data has been replaced with synthetic datasets to comply with NDA requirements, while preserving the original logic and analytical methodology.**
 ```mermaid
 graph TD
-    A[<b>SAP GUI Scripting</b><br/>Automation of data export] -->|648 CSV/XLS Files| B(<b>Excel Macro - VBA</b>)
+    A[<b>SAP GUI Scripting</b><br/>Automation of data export] -->|648 XLS Files| B(<b>Excel Macro - VBA</b>)
     
     subgraph "Data Transformation Layer"
     B --> C{Liquidity Logic<br/>Classification}

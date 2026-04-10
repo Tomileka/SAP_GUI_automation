@@ -1,23 +1,31 @@
 # SAP_GUI_automation
-
 ### 📊 Project Overview: Inventory Liquidity Analysis
 
 **Goal:** Automate the consolidation of fragmented inventory data across **54 plants** for the entire year of **2025**.
 
 #### 🛠️ Key Challenges & Solutions:
-*   **SAP Automation:** Developed **SAP GUI Scripting for transaction J3RFLVMOBVED** to handle bulk data exports, eliminating manual repetitive tasks.
+*   **SAP Automation:** Developed **SAP GUI Scripting** to handle bulk data exports, eliminating manual repetitive tasks.
 *   **Data Standardization:** Built a custom **VBA liquidity classification engine** to standardize raw data into meaningful business categories.
 *   **ETL Pipeline:** Managed a high volume of files (**648 total**) using **Power Query**, ensuring a stable and repeatable consolidation process.
 
+#### 🧰 Tech Stack:
+*   **SAP GUI Scripting:** Bulk data extraction automation.
+*   **VBA (Excel Macros):** Data processing & Liquidity logic implementation.
+*   **Power Query (M):** ETL pipeline and data aggregation.
+*   **Excel:** Dynamic dashboard and reporting.
+
 #### 📈 Results:
-*   **Efficiency:** Reduced the reporting cycle from **One month to just a few days**.
+*   **Efficiency:** Reduced the reporting cycle from **month to just 3 days**.
 *   **Visibility:** Provided a unified, real-time view of inventory health across all manufacturing sites.
+
 ---
 
 RU: Это скрипт для автоматизации выгрузки из транзакции SAP J3RFLVMOBVED - запасы материалов с документами для нескольких заводов. Особенность отчета по запасам в том, что он делает выгрузку по месяцам с кумулятивным эффектом. 
 Если вам нужно сделать выгрузку за весь год по 12 месяцев по 54 завода, как мне, то эта программа поможет вам сэкономить один месяц работы аналитика вместо проставления дат и кодов заводов руками.
 
 **Note: This repository contains an anonymized version of a real-world business project. All sensitive data has been replaced with synthetic datasets to comply with NDA requirements, while preserving the original logic and analytical methodology.**
+
+#### ⚙️ Process Flow:
 
 ```mermaid
 graph TD

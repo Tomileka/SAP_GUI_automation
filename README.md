@@ -1,7 +1,18 @@
 # SAP_GUI_automation
 
-**EN: This is the code to automate SAP transaction J3RFLVMOBVED to get the stock by material from multiple plants.**
-**If you need to upload data for the whole year for 12 months for 54 plants it can save one month of your work instead of manual work.**
+### 📊 Project Overview: Inventory Liquidity Analysis
+
+**Goal:** Automate the consolidation of fragmented inventory data across **54 plants** for the entire year of **2025**.
+
+#### 🛠️ Key Challenges & Solutions:
+*   **SAP Automation:** Developed **SAP GUI Scripting for transaction J3RFLVMOBVED** to handle bulk data exports, eliminating manual repetitive tasks.
+*   **Data Standardization:** Built a custom **VBA liquidity classification engine** to standardize raw data into meaningful business categories.
+*   **ETL Pipeline:** Managed a high volume of files (**648 total**) using **Power Query**, ensuring a stable and repeatable consolidation process.
+
+#### 📈 Results:
+*   **Efficiency:** Reduced the reporting cycle from **One month to just a few days**.
+*   **Visibility:** Provided a unified, real-time view of inventory health across all manufacturing sites.
+---
 
 RU: Это скрипт для автоматизации выгрузки из транзакции SAP J3RFLVMOBVED - запасы материалов с документами для нескольких заводов. Особенность отчета по запасам в том, что он делает выгрузку по месяцам с кумулятивным эффектом. 
 Если вам нужно сделать выгрузку за весь год по 12 месяцев по 54 завода, как мне, то эта программа поможет вам сэкономить один месяц работы аналитика вместо проставления дат и кодов заводов руками.

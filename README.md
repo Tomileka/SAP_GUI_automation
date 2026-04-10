@@ -2,6 +2,28 @@
 
 **Note: This repository contains an anonymized version of a real-world business project. All sensitive data has been replaced with synthetic datasets to comply with NDA requirements, while preserving the original logic and analytical methodology.**
 
+graph TD
+    A[<b>SAP GUI Scripting</b><br/>Automation of data export] -->|648 CSV/XLS Files| B(<b>Excel Macro - VBA</b>)
+    
+    subgraph "Data Transformation Layer"
+    B --> C{Liquidity Logic<br/>Classification}
+    C -->|Processing| D[Anonymized Data<br/>with Inventory Classes]
+    end
+
+    D -->|Folder Import| E[<b>Power Query - ETL</b>]
+    
+    subgraph "Aggregation Layer"
+    E --> F[Combine 54 Plants]
+    F --> G[Consolidate 12 Months]
+    end
+
+    G --> H[<b>Final Analytics Report</b><br/>Interactive Dashboard]
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style E fill:#bbf,stroke:#333,stroke-width:2px
+    style H fill:#dfd,stroke:#333,stroke-width:4px
+
+
 **EN: This is the code to automate SAP transaction J3RFLVMOBVED to get the stock by material from multiple plants.**
 **If you need to upload data for the whole year for 12 months for 54 plants it can save one month of your work instead of manual work.**
 

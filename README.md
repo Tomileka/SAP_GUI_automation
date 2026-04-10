@@ -27,29 +27,33 @@ RU: Это скрипт для автоматизации выгрузки из 
 
 #### ⚙️ Process Flow:
 
-```mermaid
-graph TD
-    A[<b>SAP GUI Scripting</b><br/>Automation of data export] -->|648 XLS Files| B(<b>Excel Macro - VBA</b>)
-    
-    subgraph "Data Transformation Layer"
-    B --> C{Liquidity Logic<br/>Classification}
-    C -->|Processing| D[Anonymized Data<br/>with Inventory Classes]
-    end
+#### ⚙️ Process Flow
+<!-- На мобильных устройствах схема может не отображаться, поэтому прячем код под спойлер -->
+<details>
+  <summary><b>Click to expand the Process Diagram (Best viewed on Desktop)</b></summary>
 
-    D -->|Folder Import| E[<b>Power Query - ETL</b>]
-    
-    subgraph "Aggregation Layer"
-    E --> F[Combine 54 Plants]
-    F --> G[Consolidate 12 Months]
-    end
+  ```mermaid
+  graph TD
+      A[SAP GUI Scripting<br/>Automation of data export] -->|648 CSV/XLS Files| B(Excel Macro - VBA)
+      
+      subgraph Data_Transformation_Layer
+      B --> C{Liquidity Logic<br/>Classification}
+      C -->|Processing| D[Anonymized Data<br/>with Inventory Classes]
+      end
 
-    G --> H[<b>Final Analytics Report</b><br/>Interactive Dashboard]
+      D -->|Folder Import| E[Power Query - ETL]
+      
+      subgraph Aggregation_Layer
+      E --> F[Combine 54 Plants]
+      F --> G[Consolidate 12 Months]
+      end
 
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style E fill:#bbf,stroke:#333,stroke-width:2px
-    style H fill:#dfd,stroke:#333,stroke-width:4px
+      G --> H[Final Analytics Report<br/>Interactive Dashboard]
+
+      style A fill:#f9f,stroke:#333,stroke-width:2px
+      style E fill:#bbf,stroke:#333,stroke-width:2px
+      style H fill:#dfd,stroke:#333,stroke-width:4px
 ```
-
 
 **It gives cummulative results strating from the 1st of January. Example: if you need the report for January, February, and March, it will upload as follow: 1st file (01 Jan 2025 - 31 Jan 2025), 2nd file (01 Jan 2025 - 28 Feb 2025), 3rd file (01 Jan 2025 - 31 March 2025).**
 

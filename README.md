@@ -25,12 +25,7 @@ RU: Это скрипт для автоматизации выгрузки из 
 
 **Note: This repository contains an anonymized version of a real-world business project. All sensitive data has been replaced with synthetic datasets to comply with NDA requirements, while preserving the original logic and analytical methodology.**
 
-
-#### ⚙️ Process Flow
-<!-- На мобильных устройствах схема может не отображаться, поэтому прячем код под спойлер -->
-<details>
-  <summary><b>Click to expand the Process Diagram (Best viewed on Desktop)</b></summary>
- ```mermaid
+  ```mermaid
   graph TD
       A[SAP GUI Scripting<br/>Automation of data export] -->|648 CSV/XLS Files| B(Excel Macro - VBA)
       
@@ -53,7 +48,11 @@ RU: Это скрипт для автоматизации выгрузки из 
       style H fill:#dfd,stroke:#333,stroke-width:4px
 ```
 
-  ```mermaid
+#### ⚙️ Process Flow
+<!-- На мобильных устройствах схема может не отображаться, поэтому прячем код под спойлер -->
+<details>
+  <summary><b>Click to expand the Process Diagram (Best viewed on Desktop)</b></summary>
+ ```mermaid
   graph TD
       A[SAP GUI Scripting<br/>Automation of data export] -->|648 CSV/XLS Files| B(Excel Macro - VBA)
       

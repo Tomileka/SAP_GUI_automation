@@ -21,7 +21,8 @@ graph TD
 
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style E fill:#bbf,stroke:#333,stroke-width:2px
-    style H fill:#dfd,stroke:#333,stroke-width:4px ```
+    style H fill:#dfd,stroke:#333,stroke-width:4px
+```
 
 
 **EN: This is the code to automate SAP transaction J3RFLVMOBVED to get the stock by material from multiple plants.**

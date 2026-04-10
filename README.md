@@ -1,4 +1,7 @@
 # SAP_GUI_automation
+
+**Note: This repository contains an anonymized version of a real-world business project. All sensitive data has been replaced with synthetic datasets to comply with NDA requirements, while preserving the original logic and analytical methodology.**
+
 **EN: This is the code to automate SAP transaction J3RFLVMOBVED to get the stock by material from multiple plants.**
 **If you need to upload data for the whole year for 12 months for 54 plants it can save one month of your work instead of manual work.**
 
